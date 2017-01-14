@@ -1,0 +1,25 @@
+<div class="row mt-3">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-block">
+        <app-items-grid
+          (itemClick)="itemClick($event)"
+          [isSelected]="isSelected"
+          [items]="items"
+          [selected]="selected">
+        </app-items-grid>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-block">
+        <app-items-list
+          (itemClick)="itemClick($event)"
+          [items]="items"
+          [selected]="selected">
+        </app-items-list>
+      </div>
+    </div>
+  </div>
+</div>

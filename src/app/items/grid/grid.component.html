@@ -1,0 +1,10 @@
+<div class="row">
+  <button
+    type="button"
+    class="m-1 btn btn-outline-primary"
+    *ngFor="let item of items"
+    (click)="itemClick.emit(item)"
+    [ngClass]="{'active': isSelected(item)}">
+    {{item.name}}
+  </button>
+</div>
